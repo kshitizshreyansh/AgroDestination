@@ -1,0 +1,16 @@
+<div class="container p-2 bg-white rounded mb-5" style="margin-top:4px" *ngFor="let i of cropDisplay">
+
+    <div class="container-fluid card border-0" style=" margin-top:15px">
+        <div class="row">
+            <div class="col-2" *ngFor="let j of i.CropSchema">
+                <div class="d-flex flex-column align-items-center ">
+                    <img class="card-img-top zoom" style=" margin-top: 20px;" src="{{j.imagePath}}" alt="Card image cap" height="170" width="150">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h6 class="card-title">{{j.title}}</h6>
+                        <h4 class="card-text" style="color: green; font-weight:750;">{{j.quantity}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

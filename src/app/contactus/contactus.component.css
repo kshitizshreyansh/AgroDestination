@@ -1,0 +1,122 @@
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .id {
+        background: linear-gradient(to left, rgba(114, 236, 0, 0.212), rgba(24, 26, 24, 0.562));
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 25px;
+    
+        height: 100vh;
+    }
+
+    .main {
+
+        height: 420px;
+        width: 70%;
+        margin:  auto;
+        /* background-color: rgb(47, 255, 151);  */
+        /* border-radius: 15px; */
+        /* border: 1px solid white; */
+        /* box-shadow: 0 0 5px white;  */
+        margin-bottom:25px;
+        
+    }
+
+    .main .right {
+        background: url(../../assets/pic1.jpg);
+        float: right;
+        width: 50%;
+        height: 420px;
+        background-size: cover;
+        border-radius: 0 15px 15px 0;
+        margin-bottom: 25px;
+
+    }
+
+    .right .content {
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        color:white;
+        margin-top: 91px;
+        
+
+       
+    }
+    .right .content i{
+        width: 50px;
+        text-align: center;
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    .right .content  {
+        padding: 15px;
+        font-size: 18px;
+        }
+
+
+    .main .left {
+        width: 50%;
+        height: 420px;
+        float: left;
+        background-color: white;
+    }
+
+    .left form {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    form input {
+        width: 90%;
+        margin: auto;
+        padding: 3%;
+        margin-bottom: 10px;
+        display: block;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(0, 0, 0, .3);
+
+
+    }
+
+    form textarea {
+        width: 90%;
+        margin: 2%;
+        padding: 3%;
+        border: none;
+        resize: none;
+        outline: none;
+        border-bottom: 2px solid rgba(0, 0, 0, .3);
+        
+    }
+
+    form input[type=submit] {
+        width: 30%;
+        border: none;
+        outline: none;
+        background: linear-gradient(to left, rgb(0, 110, 236), rgb(103, 155, 252));
+        border-radius: 15px;
+        font-weight: bolder;
+        color: white;
+        font-size: 19px;
+        padding: 7px 0;
+    }
+
+    .left .title {
+        margin: auto;
+        width: 100%;
+    }
+
+    .title h1 {
+        text-align: center;
+        padding: 10px;
+    }
+    
