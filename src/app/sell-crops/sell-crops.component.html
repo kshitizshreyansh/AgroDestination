@@ -1,0 +1,37 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: midnightblue">
+        
+        <h4 align=center style="color:cornsilk; margin-left: 628px; font-size: 40px; font-weight: 700; letter-spacing: 5px"> sell crops</h4>
+    </nav>
+
+</div>
+<div class="container" style="margin-top:100px">
+    <form [formGroup]="form" (submit)=onAddCrop()>
+        <div class="form-row m-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Crop Category" formControlName="category">
+            </div>
+        </div>
+       
+        <div class="form-row m-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Crop Name" formControlName="title">
+            </div>
+        </div>
+        <div class="form-row m-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Image" formControlName="image">
+            </div>
+        </div>
+        <div class="form-row m-3 justify-content-center">
+               <button type="submit" id="b1" class="btn btn-lg text-white"  style="background-color: midnightblue">Sell Crop</button>  
+               <button (click)="farmer()" id="b1" class="btn btn-lg text-white ml-3"  style="background-color: midnightblue">GO BACK</button>  
+        </div>
+
+    </form>
+</div>
+<div class="container-fluid">
+    <app-disp-sell-crop></app-disp-sell-crop>
+</div>
+
+

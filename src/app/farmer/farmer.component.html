@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="margin-left: 390px;">Farmer Panel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active">Post Feedback<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]='["/disp-tips"]'>Farming Tips</a>
+        <a class="nav-item nav-link" [routerLink]='["/supplierrequest"]'>Supplier Request</a>
+        <a class="nav-item nav-link" [routerLink]='["/sellcrops"]'>Sell Crops</a>
+        <a class="nav-item nav-link" href="#">Log Out</a>
+      </div>
+    </div>
+</nav>
+
+  <!-- <div>
+      <form (submit)="onSaveFeedback()" [formGroup]="feedback">
+        <input type="text" placeholder="pname" required formControlName="pname">
+        <textarea name="pfeedback" rows="5" placeholder="Add Feedback" formControlName="pfeedback"></textarea>
+        <button type="submit">Add Feedback</button>
+      </form>
+  </div>
+
+
+  <div>
+    <app-displaypost></app-displaypost>
+  </div> -->
+
+
+
+
+  <div class="container" style="margin-top:100px">
+        <form [formGroup]="form" (submit)=onSavePost()>
+          <div class="form-row m-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="post title" formControlName="title">
+            </div>
+        </div>
+          <div class="form-row m-3">
+            <div class="col">
+              <textarea rows="2" type="text" class="form-control" placeholder="post Description"
+                formControlName="description"></textarea>
+            </div>
+          </div>
+      
+         
+          <div class="form-row m-3 justify-content-center">
+            <button type="submit" class="btn btn-lg text-white" style="background-color: midnightblue">Add Post</button>
+          </div>
+        </form>
+  </div>
+      
+      <div class="container-fluid">
+        <app-displaypost></app-displaypost>
+      </div>
+      
